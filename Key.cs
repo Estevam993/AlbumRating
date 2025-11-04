@@ -1,4 +1,4 @@
-﻿namespace ApiFinanceira;
+﻿namespace AlbumRating;
 
 public class Key
 {

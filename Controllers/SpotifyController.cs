@@ -1,10 +1,10 @@
 ﻿using System.Text.Json;
-using ApiFinanceira.DTOs;
-using ApiFinanceira.Services;
+using AlbumRating.DTOs;
+using AlbumRating.Services;
 using DotNetEnv;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiFinanceira.Controllers;
+namespace AlbumRating.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

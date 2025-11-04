@@ -10,10 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ApiFinanceira")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AlbumRating")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df4409909f9cb962cb65878a1a0dd434ba75963")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+659082e4fc5ffd47402db54c7e12fb07a398a151")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiFinanceira")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiFinanceira")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
-﻿using ApiFinanceira.DTOs;
+﻿using AlbumRating.DTOs;
 
-namespace ApiFinanceira.Controllers;
+namespace AlbumRating.Controllers;
 
 using Contexts;
 using Models;

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiFinanceira.Services;
+namespace AlbumRating.Services;
 
 public class SpotifyServices
 {

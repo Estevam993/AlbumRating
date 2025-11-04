@@ -1,6 +1,6 @@
 using System.Text;
-using ApiFinanceira;
-using ApiFinanceira.Contexts;
+using AlbumRating;
+using AlbumRating.Contexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;

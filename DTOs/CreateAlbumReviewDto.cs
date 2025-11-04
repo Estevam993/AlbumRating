@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApiFinanceira.DTOs;
+namespace AlbumRating.DTOs;
 
 public class CreateAlbumReviewDto
 {

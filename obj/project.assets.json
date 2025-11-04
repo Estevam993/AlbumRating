@@ -8173,11 +8173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj",
-      "projectName": "ApiFinanceira",
-      "projectPath": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj",
+      "projectUniqueName": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\AlbumRating.csproj",
+      "projectName": "AlbumRating",
+      "projectPath": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\AlbumRating.csproj",
       "packagesPath": "C:\\Users\\Estevam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\obj\\",
+      "outputPath": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Estevam\\AppData\\Roaming\\NuGet\\NuGet.Config"

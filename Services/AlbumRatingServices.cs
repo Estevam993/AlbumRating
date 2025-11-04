@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
-using ApiFinanceira.Models;
+using AlbumRating.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiFinanceira.Services;
+namespace AlbumRating.Services;
 
 public class AlbumRatingServices
 {

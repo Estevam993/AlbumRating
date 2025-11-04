@@ -1,11 +1,11 @@
-﻿using ApiFinanceira.Contexts;
-using ApiFinanceira.DTOs;
-using ApiFinanceira.Models;
-using ApiFinanceira.Services;
+﻿using AlbumRating.Contexts;
+using AlbumRating.DTOs;
+using AlbumRating.Models;
+using AlbumRating.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiFinanceira.Controllers;
+namespace AlbumRating.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

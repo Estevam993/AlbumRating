@@ -1,10 +1,10 @@
 ﻿using System.Security.Claims;
-using ApiFinanceira.Contexts;
+using AlbumRating.Contexts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiFinanceira.Controllers;
+namespace AlbumRating.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

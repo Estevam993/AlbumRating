@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj": {}
+    "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\ApiFinanceira.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj": {
+    "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\ApiFinanceira.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj",
+        "projectUniqueName": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\ApiFinanceira.csproj",
         "projectName": "ApiFinanceira",
-        "projectPath": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj",
+        "projectPath": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\ApiFinanceira.csproj",
         "packagesPath": "C:\\Users\\Estevam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\obj\\",
+        "outputPath": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Estevam\\AppData\\Roaming\\NuGet\\NuGet.Config"

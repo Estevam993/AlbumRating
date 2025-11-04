@@ -1,6 +1,6 @@
-@ApiFinanceira_HostAddress = http://localhost:5280
+@AlbumRating_HostAddress = http://localhost:5280
 
-GET {{ApiFinanceira_HostAddress}}/weatherforecast/
+GET {{AlbumRating_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

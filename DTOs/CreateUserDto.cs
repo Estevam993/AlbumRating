@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ApiFinanceira.DTOs;
+namespace AlbumRating.DTOs;
 
 public class CreateUserDto
 {

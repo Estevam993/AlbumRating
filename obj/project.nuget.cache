@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qce2NnhKYsw=",
+  "dgSpecHash": "eTf73ix99P4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Estevam\\RiderProjects\\ApiFinanceira\\ApiFinanceira.csproj",
+  "projectFilePath": "C:\\Users\\Estevam\\RiderProjects\\AlbumRating\\AlbumRating.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Estevam\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Estevam\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",

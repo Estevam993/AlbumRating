@@ -1,10 +1,10 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using ApiFinanceira.Models;
+using AlbumRating.Models;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ApiFinanceira.Services;
+namespace AlbumRating.Services;
 
 public class TokenServices
 {

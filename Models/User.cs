@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApiFinanceira.Models;
+namespace AlbumRating.Models;
 
 public class User
 {
@@ -22,8 +22,7 @@ public class User
 
     public bool Active { get; set; } = true;
 
-    public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
-    
+
     public ICollection<AlbumReview> AlbumReviews { get; set; } = new List<AlbumReview>();
 
     public void SetPassword(string password)

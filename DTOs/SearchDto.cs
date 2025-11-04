@@ -1,4 +1,4 @@
-﻿namespace ApiFinanceira.DTOs;
+﻿namespace AlbumRating.DTOs;
 
 public class SearchDto
 {
