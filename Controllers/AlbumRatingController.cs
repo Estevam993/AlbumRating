@@ -119,7 +119,9 @@ public class AlbumRatingController : Controller
     {
         var userId = GetUserId();
 
-        var userExist = await _dbContext.Users.AnyAsync(u => u.Id == userId);
+        var userExist = await _dbContext.Users
+            .AnyAsync(u => u.Id == userId);
+        
         if (!userExist)
         {
             return NotFound(new { message = "User not found." });
@@ -127,7 +129,9 @@ public class AlbumRatingController : Controller
 
         try
         {
-            var reviews = await _dbContext.AlbumReview.Where(r => r.UserId == userId).ToListAsync();
+            var reviews  = await _dbContext.AlbumReview
+                .Where(r => r.UserId == userId)
+                .ToListAsync();
 
             var formatedAlbumRating = await AlbumRatingServices.GetAlbumsInfoSpotify(reviews, token);
 

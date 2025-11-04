@@ -124,6 +124,7 @@ public class AlbumRatingServices
 
         var response =
             await _httpClient.GetAsync($"https://api.spotify.com/v1/albums?ids={albumsIds}");
+
         if (!response.IsSuccessStatusCode)
         {
             var error = await response.Content.ReadAsStringAsync();
