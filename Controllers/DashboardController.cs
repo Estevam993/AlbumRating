@@ -1,5 +1,7 @@
 ﻿using System.Security.Claims;
 using AlbumRating.Contexts;
+using AlbumRating.Models;
+using AlbumRating.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -45,7 +47,7 @@ public class DashboardController : Controller
     }
 
     [HttpGet]
-    public async Task<ActionResult> Get()
+    public async Task<ActionResult> Get([FromQuery] string token)
     {
         var userId = GetUserId();
 
@@ -65,16 +67,8 @@ public class DashboardController : Controller
 
             var reviewsCount = user.AlbumReviews.Count(a => a.Review != "");
             var ratingCount = user.AlbumReviews.Count(a => a.Rate != 0);
-            var allReviews = user.AlbumReviews
-                .Select(a => new
-                {
-                    a.AlbumId,
-                    a.Rate,
-                    a.Review,
-                    a.DateCreated
-                })
-                .OrderByDescending(a => a.Rate)
-                .ToList();
+
+            var reviews = await AlbumRatingServices.GetAlbumsInfoSpotify(user.AlbumReviews.ToList(), token);
 
             return Ok(new
                 {
@@ -86,7 +80,7 @@ public class DashboardController : Controller
                         ReviewsCount = reviewsCount,
                         RatingCount = ratingCount,
                         RatingAverage = user.AlbumReviews.Average(a => a.Rate),
-                        Reviews = allReviews
+                        Reviews = reviews
                     }
                 }
             );

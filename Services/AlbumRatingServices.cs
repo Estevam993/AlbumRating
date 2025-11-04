@@ -157,26 +157,28 @@ public class AlbumRatingServices
     private static List<FormatedAlbumsReviews> FormatAlbumsReview(List<AlbumReview> reviews, Root formatedData)
     {
         var newAlbumsReviews = reviews.Select(r =>
-        {
-            var thisAlbum = formatedData.albums.FirstOrDefault(a => a.id == r.AlbumId);
-
-            return new FormatedAlbumsReviews
             {
-                Id = r.Id,
-                AlbumId = r.AlbumId,
-                Name = thisAlbum.name,
-                Link = thisAlbum.external_urls.spotify,
-                Review = r.Review,
-                Rate = r.Rate,
-                Image = thisAlbum?.images?.FirstOrDefault()?.url,
-                Artists = new ArtistInfo
+                var thisAlbum = formatedData.albums.FirstOrDefault(a => a.id == r.AlbumId);
+
+                return new FormatedAlbumsReviews
                 {
-                    Id = thisAlbum?.artists?.FirstOrDefault()?.id,
-                    Name = thisAlbum?.artists?.FirstOrDefault()?.name,
-                    Link = thisAlbum?.artists?.FirstOrDefault()?.external_urls?.spotify
-                }
-            };
-        }).ToList();
+                    Id = r.Id,
+                    AlbumId = r.AlbumId,
+                    Name = thisAlbum.name,
+                    Link = thisAlbum.external_urls.spotify,
+                    Review = r.Review,
+                    Rate = r.Rate,
+                    Image = thisAlbum?.images?.FirstOrDefault()?.url,
+                    Artists = new ArtistInfo
+                    {
+                        Id = thisAlbum?.artists?.FirstOrDefault()?.id,
+                        Name = thisAlbum?.artists?.FirstOrDefault()?.name,
+                        Link = thisAlbum?.artists?.FirstOrDefault()?.external_urls?.spotify
+                    }
+                };
+            })
+            .OrderByDescending(a => a.Rate)
+            .ToList();
 
         return newAlbumsReviews;
     }
